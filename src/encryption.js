@@ -1,4 +1,4 @@
-let encryption={
+const encryption={
 
     encode:(text)=>{
         let vowelEquivalences={
@@ -8,7 +8,7 @@ let encryption={
             "o":"ober",
             "u":"ufat"
         }
-        return textEncode=text.replace(/[aieou]/g,(vowel)=>vowelEquivalences[vowel])
+        return text.replace(/[aieou]/g,(vowel)=>vowelEquivalences[vowel])
     },
     decode:(text)=>{
         let inverseVowelEquivalences={
@@ -18,7 +18,7 @@ let encryption={
             "ober":"o",
             "ufat":"u"
         }
-        return textEncode=text.replace(/[ai|imes|enter|ober|ufat]/g,(equivalence)=>inverseVowelEquivalences[equivalence])
+        return text.replace(/ai|imes|enter|ober|ufat/g, (equivalence)=>inverseVowelEquivalences[equivalence]);
     }
 }
  export default encryption;
