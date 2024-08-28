@@ -47,6 +47,7 @@ body{
     flex-grow: 1;
     border: none;
 
+
 }
 .input-section__textarea::placeholder{
     color:#0A3871;
@@ -57,16 +58,20 @@ body{
 
 }
 .main-content__buttons{
+    width:80% ;
     display: flex;
-    justify-content: space-between;
-    gap:24px
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 .button{
-    width: 328px;
+    max-width: 328px;
+    width: 85%;
     height: 67px;
     border-radius: 24px;
     padding: 24px;
+    cursor:pointer;
+    
 
 }
 .button--encrypt{
@@ -74,10 +79,20 @@ body{
     color:#ffffff
 
 }
+.button--encrypt:hover{
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #074591;
+    transition: .3s;
+}
 .button--decrypt{
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
     color:#0A3871;
+}
+.button--decrypt:hover{
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #bbc2ca;
+    transition: .3s;
 }
 /* styles for section output */
 .main-content__output-section{
@@ -168,12 +183,27 @@ body{
     }
     .main-content__buttons{
         flex-direction: column;
+        gap: 16px;
     }
     .main-content{
         flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        
     }
+    .main-content__input-section{
+        margin-top: 0; 
+        margin-bottom: 0;
+        width: 100%;
+        flex-grow:0.5 ;
+
+    }
+
     .main-content__output-section{
-        width: 70%;
+        width: 90%;
+        flex-grow:0.5 ;
+       
     }
 
 }
@@ -186,14 +216,29 @@ body{
 
     .main-content__buttons{
         flex-direction: column;
+        gap: 16px;
     }
     .main-content{
         flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
     }
+
+    .main-content__input-section{
+        margin-top: 0; 
+        margin-bottom: 0;
+        width: 100%;
+        flex-grow:0.5 ;
+
+    }
+
     .main-content__output-section{
-        width: 70%;
+        width: 90%;
+        flex-grow:0.5 ;
+       
     }
-}
+    }
 
 /* Estilos para escritorios (mayores a 1024px) */
 @media (min-width: 1025px) {
