@@ -17,6 +17,7 @@ encryptButton.addEventListener("click", () =>{
 decryptButton.addEventListener("click", () =>{
     const text=document.getElementById("input-textarea").value
     document.getElementById("output-textarea").value=encryption.decode(text)
+    document.getElementById("input-textarea").value=" "
     
 
 })
