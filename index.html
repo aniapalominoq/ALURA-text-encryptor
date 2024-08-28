@@ -22,37 +22,36 @@
 
     <main class="main-content">
         <section class="main-content__input-section">
-            <label for="input-textarea" class="sr-only">Input Text</label>
-            <div class="input-section__wrapper">
-                <textarea id="input-textarea" class="input-section__textarea" placeholder="Enter the text you want to encrypt or decrypt."
-                    aria-describedby="encryption-instructions"></textarea>
-                <button id="voice-button" class="button button--voice" aria-label="Start voice input">
-                    <i class="fa-solid fa-microphone"></i>
-                </button>
+            <textarea id="input-textarea" class="input-section__textarea" placeholder="Enter text here">
+            </textarea>
+            <p id="encryption-note" class="main-content__note">
+                <i class="fa-solid fa-circle-exclamation" ></i> Only lowercase letters and no accents
+            </p>
+            <div class="main-content__buttons">
+                <button id="encrypt-button" class="button button--encrypt" aria-label="Encrypt the input text">Encrypt</button>
+                <button id="decrypt-button" class="button button--decrypt" aria-label="Decrypt the input text">Decrypt</button>
             </div>
-            <p id="encryption-instructions" class="sr-only">Input the text you want to encrypt or decrypt. Only lowercase letters and no accents are allowed.</p>
         </section>
 
-        <section class="main-content__output-section" aria-live="polite">
+        <section class="main-content__output-section" >
             <header class="output-section__header">
-                <button id="copy-button" class="button button--copy" aria-label="Copy encrypted text to clipboard">Copy!</button>
+                <button id="copy-button" class="button button--copy" >Copy!</button>
             </header>
-            <label for="output-textarea" class="sr-only">Encrypted/Decrypted Text</label>
-            <textarea id="output-textarea" class="output-section__textarea" disabled aria-live="polite"></textarea>
+            <textarea id="output-textarea" class="output-section__textarea" ></textarea>
             <footer class="output-section__footer">
                 <ul class="social-links">
                     <li class="social-links__item">
-                        <a href="#" class="social-links__link" aria-label="Share via WhatsApp">
+                        <a href="https://web.whatsapp.com/" class="social-links__link" aria-label="Share via WhatsApp">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </li>
                     <li class="social-links__item">
-                        <a href="#" class="social-links__link" aria-label="Share via Telegram">
+                        <a href="https://web.telegram.org/a/" class="social-links__link" aria-label="Share via Telegram">
                             <i class="fa-brands fa-telegram"></i>
                         </a>
                     </li>
                     <li class="social-links__item">
-                        <a href="#" class="social-links__link" aria-label="Share via Messenger">
+                        <a href="https://www.messenger.com/" class="social-links__link" aria-label="Share via Messenger">
                             <i class="fa-brands fa-facebook-messenger"></i>
                         </a>
                     </li>
@@ -60,25 +59,20 @@
             </footer>
         </section>
 
-        <p id="encryption-note" class="main-content__note" aria-live="polite">
-            <i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Only lowercase letters and no accents
-        </p>
-        <div class="main-content__buttons">
-            <button id="encrypt-button" class="button button--encrypt" aria-label="Encrypt the input text">Encrypt</button>
-            <button id="decrypt-button" class="button button--decrypt" aria-label="Decrypt the input text">Decrypt</button>
-        </div>
+
+
     </main>
 
     <footer class="footer">
         <p class="footer__text">&copy; 2024 Melania Palomino.</p>
         <ul class="footer__social-links">
             <li class="footer__social-item">
-                <a href="#" class="footer__social-link" aria-label="GitHub">
+                <a href="https://github.com/aniapalominoq"  class="footer__social-link" aria-label="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </li>
             <li class="footer__social-item">
-                <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/aniapalominoq/" class="footer__social-link" aria-label="LinkedIn">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
