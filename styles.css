@@ -165,31 +165,6 @@ body{
 @media (max-width: 767px) {
     body {
         font-size: 14px; /* Tamaño de fuente más pequeño */
-        padding: 10px;
-    }
-
-    .container {
-        padding: 0 10px;
-    }
-}
-
-/* Estilos para tabletas (entre 768px y 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: 16px; /* Tamaño de fuente estándar */
-        padding: 20px;
-    }
-
-    .container {
-        padding: 0 20px;
-    }
-}
-
-
-/* Estilos para dispositivos móviles (menores a 768px) */
-@media (max-width: 767px) {
-    body {
-        font-size: 14px; /* Tamaño de fuente más pequeño */
     }
     .main-content__buttons{
         flex-direction: column;
@@ -197,7 +172,9 @@ body{
     .main-content{
         flex-direction: column;
     }
-
+    .main-content__output-section{
+        width: 70%;
+    }
 
 }
 
@@ -212,6 +189,9 @@ body{
     }
     .main-content{
         flex-direction: column;
+    }
+    .main-content__output-section{
+        width: 70%;
     }
 }
 
